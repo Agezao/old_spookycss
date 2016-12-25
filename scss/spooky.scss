@@ -1,10 +1,9 @@
 /*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
+* Spooky Css V1.0.0
+* A responsive boilerplate based on Skeleton(and the (un)official Sass Version)
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
+* 25/12/2016
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
@@ -17,7 +16,7 @@
 @import "base/typography";
 
 /* Modules */
-@import "modules/grid";
+@import "modules/grid"; 
 @import "modules/buttons";
 @import "modules/forms";
 @import "modules/lists";

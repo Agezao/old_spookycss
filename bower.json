@@ -1,14 +1,14 @@
 {
-  "name": "Skeleton-Sass",
-  "version": "2.0.4",
-  "homepage": "https://github.com/whatsnewsaes/Skeleton-Sass",
+  "name": "SpookyCss",
+  "version": "1.0.0",
+  "homepage": "https://github.com/agezao/SpookyCss",
   "authors": [
-    "Seth Coelen <scoelen89@gmail.com> (http://SethCoelen.com)"
+    "Gabriel Age <0800.grc@gmail.com> (http://fb.com/agezao)"
   ],
-  "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
-  "main": "scss/skeleton.scss",
+  "description": "A responsive boilerplate based on Skeleton(and the (un)official Sass Version)",
+  "main": "scss/spooky.scss",
   "keywords": [
-    "skeleton",
+    "spooky",
     "sass",
     "scss",
     "responsive",
