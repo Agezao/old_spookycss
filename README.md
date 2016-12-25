@@ -1,4 +1,4 @@
-# [SpookyCss]
+# SpookyCss
 
 SpookyCss is a responsive boilerplate based on the (un)official Sass version of Skeleton Framework.
 
@@ -34,6 +34,9 @@ The download includes Spooky's CSS, ~~Normalize CSS as a reset, and an index.htm
 ```
 spooky/
 ├── index.html
+├── css/
+│   |── spooky.css
+│   └── spooky.min.css
 ├── scss/
 │   └── spooky.scss
 ├── package.json
