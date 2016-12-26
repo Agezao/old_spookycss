@@ -12,19 +12,19 @@
 @import "base/variables";
 @import "base/functions";
 @import "base/base-styles";
-@import "base/spacing";
-@import "base/utils";
 @import "base/typography";
 
 /* Modules */
 @import "modules/grid"; 
 @import "modules/buttons";
 @import "modules/forms";
-@import "modules/lists";
-@import "modules/code";
 @import "modules/tables";
 @import "modules/spacing";
 @import "modules/media-queries";
+
+/* Utilities */
+@import "base/spacing";
+@import "base/utils";
 
 
 //If bootstrap grid compatibility is a thing for you uncomment the assets you need and build
