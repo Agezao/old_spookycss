@@ -491,33 +491,55 @@
     <!-- Utilities and Misc. -->
     <section id="utilities">
       <h5 class="bold-header">Utilities</h5>
-      <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+      <p>Spooky has some small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
 
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-      <pre class="code-example"><code class="code-example-body prettyprint">/* Utility Classes */
+      <pre class="code-example"><code class="code-example-body prettyprint">
+      /* Utility Classes */
 
-      /* Make element full width */
-      .u-full-width {
-        width: 100%;
-        box-sizing: border-box; }
+      /* 100% width for an element */
+      .full-width
 
-      /* Make sure elements don't run outside containers (great for images in columns) */
-      .u-max-full-width {
-        max-width: 100%;
-        box-sizing: border-box; }
+      /* Max 100% width for an element */
+      .max-full-width
 
-      /* Float either direction */
-      .u-pull-right {
-        float: right; }
-      .u-pull-left {
-        float: left; }
+      /* Float to the right */
+      .pull-right
 
-      /* Clear a float */
-      .u-cf {
-        content: "";
-        display: table;
-        clear: both; }
+      /* Float to the left */
+      .pull-left 
+
+      /* Center align text */
+      .center-text 
+
+      /* Hidden the overflow of an element */
+      .overflow-hidden
+
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+
+    <!-- Spacing. -->
+    <section id="utilities">
+      <h5 class="bold-header">Spacing</h5>
+      <p>Within Spooky come some spacing features to use as default, with this spacings you can better position elements with ease. You'll have margin and padding with some default px units and also some clears. You can go all the way from <code>.ma-0</code> for a 0 margin to <code>.ma-80</code> for a 80px margin. There're some clears that may vary from <code>.ma-cl-v</code> to clear vertical margins to <code>.ma-cl-t</code> to clear only the top margin. All this apply to padding to, just change the <code>ma</code> to <code>pd</code>, just like <code>.ma-80</code> --> <code>.pd-80</code> or also <code>.ma-cl-v</code> --> <code>.pd-cl-v</code>. You get it.</p>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example"><code class="code-example-body prettyprint">
+      /* Spacing Classes */
+
+      /* Give a left margin of 80px */
+      &lt;div class="ma-80 ma-cl-v"&gt; &lt;/div&gt;
+
+      /* Give a top padding of 60px */
+      &lt;div class="pd-60 pd-cl-h pd-cl-b"&gt; &lt;/div&gt;
+
       </code>
       </pre>
       <!-- ————————————————————————————————————————————————————— -->
