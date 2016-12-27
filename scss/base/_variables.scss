@@ -10,12 +10,26 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
 // Colors
 $light-grey: #e1e1e1 !default;
+$default-grey: #f6f8fa !default;
 $dark-grey: #333 !default;
-$primary-color: #33c3f0 !default;
+$primary-color: #049cff !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
-$link-color: #1eaedb !default;
+$link-color: #368cc2 !default;
 $font-color: #222 !default;
+
+$light-blue: #049cff !default;
+$medium-blue: #368cc2 !default;
+$dark-blue: #1f6bd3 !default;
+
+$main-red: #ed344e;
+$light-red: lighten($main-red, 13.5%) !default;
+$dark-red: darken($main-red, 6.5%) !default;
+
+$main-green: #4baf4b;
+$light-green: lighten($main-green, 13.5%) !default;
+$dark-green: darken($main-green, 6.5%) !default;
+
 
 // Typography
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -26,7 +40,7 @@ $container-width-larger-than-mobile: 85% !default;
 $container-width-larger-than-phablet: 80% !default;
 $total-columns: 12 !default;
 $column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
-$column-margin: 4% !default; // space between columns
+$column-margin: 2% !default; // space between columns
 
 // Misc
 $global-radius: 4px !default;

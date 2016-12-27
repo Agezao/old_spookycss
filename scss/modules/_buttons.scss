@@ -145,3 +145,75 @@ input {
     box-sizing: border-box;
   }
 }
+
+
+
+
+// Red Button
+.button.button-red,
+button.button-red {
+  color: #fff;
+  background-color: $main-red;
+  border-color: $dark-red;
+}
+
+input.button-red {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    color: #fff;
+    background-color: $main-red;
+    border-color: $dark-red;
+  }
+}
+
+.button.button-red:hover,
+button.button-red:hover {
+  background-color: $dark-red;
+}
+
+input {
+  &[type="submit"].button-red:focus,
+  &[type="reset"].button-red:focus,
+  &[type="button"].button-red:focus,
+  &[type="submit"].button-red:hover,
+  &[type="reset"].button-red:hover,
+  &[type="button"].button-red:hover {
+    background-color: $dark-red;
+  }
+}
+
+
+// Green Buttons
+.button.button-green,
+button.button-green {
+  color: #fff;
+  background-color: $main-green;
+  border-color: $dark-green;
+}
+
+input.button-green {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    color: #fff;
+    background-color: $main-green;
+    border-color: $dark-green;
+  }
+}
+
+.button.button-green:hover,
+button.button-green:hover {
+  background-color: $dark-green;
+}
+
+input.button-green {
+  &[type="submit"]:focus,
+  &[type="reset"]:focus,
+  &[type="button"]:focus,
+  &[type="submit"]:hover,
+  &[type="reset"]:hover,
+  &[type="button"]:hover {
+    background-color: $dark-green;
+  }
+}
