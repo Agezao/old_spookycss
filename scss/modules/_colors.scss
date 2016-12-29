@@ -9,8 +9,14 @@
 
 .light {
   color: $secondary-color;
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid $border-color;
+}
+
+.dark {
+  color: #fff;
+  background-color: $main-dark;
+  background-color: $dark-dark;
 }
 
 .red {

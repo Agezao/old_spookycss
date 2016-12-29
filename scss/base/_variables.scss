@@ -30,6 +30,10 @@ $main-green: #4baf4b;
 $light-green: lighten($main-green, 13.5%) !default;
 $dark-green: darken($main-green, 6.5%) !default;
 
+$main-dark: #444;
+$light-dark: lighten($main-dark, 13.5%) !default;
+$dark-dark: darken($main-dark, 6.5%) !default;
+
 
 // Typography
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
