@@ -217,3 +217,37 @@ input.button-green {
     background-color: $dark-green;
   }
 }
+
+// Dark Buttons
+.button.button-dark,
+button.button-dark {
+  color: #fff;
+  background-color: $main-dark;
+  border-color: $dark-dark;
+}
+
+input.button-dark {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    color: #fff;
+    background-color: $main-dark;
+    border-color: $dark-dark;
+  }
+}
+
+.button.button-dark:hover,
+button.button-dark:hover {
+  background-color: $dark-dark;
+}
+
+input.button-dark {
+  &[type="submit"]:focus,
+  &[type="reset"]:focus,
+  &[type="button"]:focus,
+  &[type="submit"]:hover,
+  &[type="reset"]:hover,
+  &[type="button"]:hover {
+    background-color: $dark-dark;
+  }
+}
