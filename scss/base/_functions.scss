@@ -2,9 +2,9 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @function grid-column-width($n) {
-  @return unquote('calc(' + ($column-width * $n - ($column-margin*($total-columns - $n)/$total-columns)) + ' - 1%)');
+  @return unquote(($column-width * $n)+'%');
 }
 
 @function grid-offset-length($n) {
-  @return grid-column-width($n) + $column-margin;
+  @return grid-column-width($n);
 }
