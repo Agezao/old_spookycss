@@ -1,29 +1,115 @@
-.bold-header {
-	text-transform: uppercase;
-    font-weight: 600;
-}
-
-.example-grid *[class*='col-'] {
-	background-color: #f1f1f1;
-	text-align: center;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding: 5px 0;
-	border-radius: 5px;
-}
+/* Main sections */
 
 section {
 	margin: 50px 0;
 }
 
-section:first-child {
-	margin: 15% 0 50px 0;
+section.header{
+  min-height: 65vh;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
+section.header > div{
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+section.header h1
+{ 
+  font-family: 'Montserrat', 'Raleway', sans-serif;
+  font-size: 7rem;
+  letter-spacing: -.25rem;
+}
+
+section.header h1.spookytitle{ 
+  position: absolute;
+  font-size: 19rem;
+  opacity: .03;
+  top: 5%;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
+  display: none;
+}
+
+section.header .spookyimage {
+  position: absolute;
+  opacity: .1;
+  top: 5%;
+  z-index: 0;
+  width: 250px;
+  left: 0;
+}
+
+section.header .features .col-4{
+  font-size: 1.9rem;
+}
+
+@media (max-width: 750px) {
+
+  section.header{
+    padding: 40px 20px;
+  }
+
+  section.header h1
+  { 
+    font-size: 5rem;
+    letter-spacing: -.25rem;
+  }
+
+  section.header .features .col-4{
+    line-height: 2.3rem;
+    padding: 0 0 26px 0;
+  }
+
+
+  section.header h1.spookytitle{ 
+    display: none;
+  }
+
+  section.header .spookyimage {
+    top: 1%;
+    z-index: 0;
+    width: 150px;
+    left: 0;
+  }
+}
+
+
+/* Content */
+.bold-header {
+  text-transform: uppercase;
+    font-weight: 600;
+}
+
+.example-grid *[class*='col-'] {
+  background-color: #f1f1f1;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+
+
+/* Code examples shown in the page */
 
 .code-example {
 	width: 100%;
-    max-width: 100%;
-    display: inline-block;
+  max-width: 100%;
+  display: inline-block;
 }
 
 code {
@@ -40,4 +126,5 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre;
+  overflow: auto;
 }
