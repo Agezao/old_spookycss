@@ -16,9 +16,9 @@ gulp.task('sass:prod', function () {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
+    //.pipe(sourcemaps.write())
     .pipe(rename('spooky.min.css'))
     .pipe(gulp.dest('./css'));
 });
