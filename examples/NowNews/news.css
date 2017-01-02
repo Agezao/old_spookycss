@@ -179,6 +179,7 @@ header .context-menu img {
 	opacity: 1;
 	transition: all .5s;
 	-webkit-transition: all .5s;
+	background-position-x: center;
 }
 .card .image:hover {
 	opacity: .8;
@@ -234,6 +235,7 @@ footer .container .col-4 {
 
 footer .container ul {
 	padding: 0;
+	margin: 0;
 }
 
 footer .container li,
@@ -243,10 +245,75 @@ footer .container a {
 	font-size: .68em;
 	font-weight: 600;
 	letter-spacing: -.01em;
-	color: #c1c1c1;
+	color: #ababab;
+	overflow: hidden;
+	vertical-align: middle;
 }
 
 footer .container a { 
 	padding: 0 30px 0 0;
 }
 
+footer .container a.social-icon { 
+    font-size: 3.0em;
+    float: left;
+}
+
+
+@media (max-width: 850px) {
+
+	.container {
+		width: 100%;
+	}
+
+	header .main-nav {
+		z-index: 501;
+	}
+
+	header .main-nav small {
+	    margin: 0 0 0 2.3em;
+	}
+
+	header .context-menu {
+		display: none;
+	}
+
+	header .logo {
+	    position: absolute;
+		width: 100%;
+		padding: 0;
+		left: 0;
+		top: 0;
+	}
+
+	.hero img {
+	    width: auto;
+	    height: 100%;
+	    margin: 0 0 0 20%;
+	}
+
+	.hero .container h2 {
+		max-width: 100%;
+	}
+
+	.card {
+		padding: 10px 15px 0 15px !important;
+	}
+
+	footer {
+		height: auto;
+	    padding: 10px 0;
+	}
+	
+	footer .container {
+	    height: auto;
+	}
+
+	footer .container .col-5, footer .container .col-4 {
+		height: auto;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    padding: 12px 0;
+	    text-align: center;
+	}
+}
