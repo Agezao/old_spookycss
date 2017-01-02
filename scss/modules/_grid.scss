@@ -32,7 +32,6 @@
 @media (#{$bp-larger-than-mobile}) {
   .container {
     width: $container-width-larger-than-mobile;
-    padding: 0;
   }
 }
 

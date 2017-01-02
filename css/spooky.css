@@ -309,8 +309,7 @@ p {
 
 @media (min-width: 400px) {
   .container {
-    width: 85%;
-    padding: 0; } }
+    width: 85%; } }
 
 @media (min-width: 550px) {
   .container {
