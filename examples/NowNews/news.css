@@ -1,3 +1,16 @@
+/* Defaults & Overriding */
+html, body { 
+	font-family: Montserrat,'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;	
+}
+
+.container {
+    width: 65%;
+}
+
+h2 { font-size: 2.85em; line-height: 1.25; letter-spacing: .1rem;  }
+
+/* Header */
+
 header {
   height: 3.75em;
   padding: 0 1.7em;
@@ -67,3 +80,102 @@ header .context-menu img {
 	height: auto; 
 	border-radius: 100px;
 }
+
+/* Content */
+.hero {
+	position: relative;
+	overflow: hidden;
+	height: 71vh;
+	padding: 3.75em 0 0 0;
+	color: #fff;
+
+	display: flex;
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+}
+.hero * {
+	z-index: 1;
+	position: relative;
+}
+
+.hero img {
+	position: absolute;
+	height: auto;
+	width: 100%;
+	z-index: 0;
+}
+
+.hero .container {}
+.hero .container h2 {
+	max-width: 80%;
+}
+
+.infos {
+	width: 100%;
+	padding: 0 0 2em 0;
+	overflow: hidden;
+}
+
+.infos small {
+	font-size: .59375em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: #fff;
+  padding: 0 2em 0 0;
+}
+
+.infos small[category] {
+	text-transform: uppercase;
+	float: right;
+	border-bottom: 1px solid #fff;
+	padding: 0;
+	padding-bottom: 4px;
+}
+
+.infos small[when],
+.infos small[from] {
+	display: inline-block;
+  position: relative;
+}
+
+.infos small[when]:before,
+.infos small[from]:before {
+	font-size: 2.2em;
+	float: left;
+	margin: -.2em .4em 0 1px;
+}
+
+/* Content */
+
+.card:nth-child(odd) {
+	padding: 0 29px 0 0;
+}
+.card:nth-child(even) {
+	padding: 0 0 0 29px;
+}
+
+.card .image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 250px;
+}
+
+.card .infos small {
+	color: #333;
+}
+
+.card .infos small[category] {
+	text-transform: uppercase;
+	float: right;
+	border-bottom: 1px solid #333;
+	padding: 0;
+	padding-bottom: 4px;
+}
+
