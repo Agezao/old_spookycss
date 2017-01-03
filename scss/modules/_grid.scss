@@ -28,12 +28,6 @@
   }
 }
 
-// For devices larger than 400px
-@media (#{$bp-larger-than-mobile}) {
-  .container {
-    width: $container-width-larger-than-mobile;
-  }
-}
 
 // For devices larger than 550px
 @media (#{$bp-larger-than-phablet}) {
@@ -48,10 +42,6 @@
     box-sizing: border-box; 
   }
   
-  /*.col-1:first-child,.col-2:first-child,.col-3:first-child,.col-4:first-child,.col-5:first-child,.col-6:first-child,.col-7:first-child,.col-8:first-child,.col-9:first-child,.col-10:first-child,.col-11:first-child,.col-12:first-child {
-    margin-left: 0;
-  }*/
-
   .col-1        { width: grid-column-width(1);  }
   .col-2        { width: grid-column-width(2);  }
   .col-3        { width: grid-column-width(3);  }

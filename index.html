@@ -140,20 +140,18 @@
     <section id="typography" class="overflow-hidden">
       <h5 class="bold-header">Typography</h5>
       <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
-      <div class="docs-example">
-        <div class="row">
-          <div class="six columns">
-            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
-            <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
-          </div>
-          <div class="six columns">
-            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
-            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
-            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
-            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
-            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
-            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 15rem</span></h5>
-          </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+          <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+          <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+          <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+          <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+          <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 15rem</span></h5>
+        </div>
+        <div class="col-12 pd-20 pd-cl-h">
+          <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+          <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
         </div>
       </div>
 
@@ -291,11 +289,11 @@
       &lt;!-- The above form looks like this --&gt;
       &lt;form&gt;
         &lt;div class="row"&gt;
-          &lt;div class="six columns"&gt;
+          &lt;div class="col-6"&gt;
             &lt;label for="exampleEmailInput"&gt;Your email&lt;/label&gt;
             &lt;input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
           &lt;/div&gt;
-          &lt;div class="six columns"&gt;
+          &lt;div class="col-6"&gt;
             &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
             &lt;select class="u-full-width" id="exampleRecipientInput"&gt;
               &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
@@ -449,17 +447,16 @@
     <section id="queries">
       <h5 class="bold-header">Media queries</h5>
       <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
-      <div class="docs-example row">
-        <div class="six columns">
+      <div class="row">
+        <div class="col-6">
           <ul>
             <li><strong>Desktop HD</strong>: 1200px</li>
             <li><strong>Desktop</strong>: 1000px</li>
-            <li><strong>Tablet</strong>: 750px</li>
           </ul>
         </div>
-        <div class="six columns">
+        <div class="col-6">
           <ul>
-            <li><strong>Phablet</strong>: 550px</li>
+            <li><strong>Phablet</strong>: 850px</li>
             <li><strong>Mobile</strong>: 400px</li>
           </ul>
         </div>
@@ -467,25 +464,22 @@
 
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-      <pre class="code-example"><code class="code-example-body prettyprint">/* Mobile first queries */
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+      /* Mobile first queries */
 
       /* Larger than mobile */
       @media (min-width: 400px) {}
 
       /* Larger than phablet */
-      @media (min-width: 550px) {}
-
-      /* Larger than tablet */
-      @media (min-width: 750px) {}
+      @media (min-width: 850px) {}
 
       /* Larger than desktop */
       @media (min-width: 1000px) {}
 
       /* Larger than Desktop HD */
       @media (min-width: 1200px) {}
-
-
-      </code>
+        </code>
       </pre>
       <!-- ————————————————————————————————————————————————————— -->
 
