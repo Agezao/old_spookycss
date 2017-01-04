@@ -283,8 +283,8 @@ p {
 
 .green {
   color: #fff;
-  background-color: #4baf4b;
-  border: 1px solid #419841; }
+  background-color: #14b874;
+  border: 1px solid #119a61; }
 
 .container {
   position: relative;
@@ -496,20 +496,20 @@ input[type="submit"].button-red:focus, input[type="reset"].button-red:focus, inp
 .button.button-green,
 button.button-green {
   color: #fff;
-  background-color: #4baf4b;
-  border-color: #419841; }
+  background-color: #14b874;
+  border-color: #119a61; }
 
 input.button-green[type="submit"], input.button-green[type="reset"], input.button-green[type="button"] {
   color: #fff;
-  background-color: #4baf4b;
-  border-color: #419841; }
+  background-color: #14b874;
+  border-color: #119a61; }
 
 .button.button-green:hover,
 button.button-green:hover {
-  background-color: #419841; }
+  background-color: #119a61; }
 
 input.button-green[type="submit"]:focus, input.button-green[type="reset"]:focus, input.button-green[type="button"]:focus, input.button-green[type="submit"]:hover, input.button-green[type="reset"]:hover, input.button-green[type="button"]:hover {
-  background-color: #419841; }
+  background-color: #119a61; }
 
 .button.button-dark,
 button.button-dark {
