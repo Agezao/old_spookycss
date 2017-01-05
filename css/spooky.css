@@ -260,6 +260,10 @@ h6 {
 p {
   margin-top: 0; }
 
+.bold-header {
+  font-weight: 600;
+  text-transform: uppercase; }
+
 /* Modules */
 .primary {
   color: #fff;
@@ -751,5 +755,8 @@ form {
 
 .border-radius {
   border-radius: 4px; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 /* Bootstrap compatibily */
