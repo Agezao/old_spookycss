@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 textarea,
-select {
+select, option {
   height: $input-height;
   padding: $input-padding; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: $input-background;
