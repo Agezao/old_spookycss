@@ -461,20 +461,6 @@ button.button-primary:focus {
   background-color: #368cc2;
   border-color: #368cc2; }
 
-input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
-  color: #fff;
-  background-color: #368cc2;
-  border-color: #368cc2; }
-
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #d1d1d1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
-
 .button.button-red,
 button.button-red {
   color: #fff;
@@ -531,13 +517,40 @@ input.button-dark[type="submit"]:focus, input.button-dark[type="reset"]:focus, i
 
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px;
+  height: auto;
+  padding: 8px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
+  textarea.clear,
+  select.clear {
+    padding: 9px 10px;
+    border-top: none !important;
+    border-left: none !important;
+    border-radius: 0;
+    border-right: none !important; }
+  textarea.lg,
+  select.lg {
+    font-size: 2.4rem; }
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+  height: auto;
+  padding: 8px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+  input[type="email"].clear, input[type="number"].clear, input[type="search"].clear, input[type="text"].clear, input[type="tel"].clear, input[type="url"].clear, input[type="password"].clear {
+    padding: 9px 10px;
+    border-top: none;
+    border-left: none;
+    border-radius: 0;
+    border-right: none; }
+  input[type="email"].lg, input[type="number"].lg, input[type="search"].lg, input[type="text"].lg, input[type="tel"].lg, input[type="url"].lg, input[type="password"].lg {
+    font-size: 2.4rem; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   -webkit-appearance: none;
