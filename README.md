@@ -1,13 +1,12 @@
 # SpookyCss
 
-SpookyCss is a responsive boilerplate based on the (un)official Sass version of Skeleton Framework.
+Spooky is a responsive starting point with just basic UI features, based on the (un)official Sass version of Skeleton Framework.
 
 -----
 
-Spooky is a simple, responsive boilerplate to kickstart any responsive project. In a nutshell, it's Skeleton with some adjustments of personal taste and a tentative of being bootstrap compatible.
+Spooky is a simple, responsive boilerplate to kickstart any responsive project and provides (a tentative of) bootstrap compatibility.
 
-Check out <http://getskeleton.com> to know more about Skeleton.
-Or keep reading to start with Spooky >
+Keep reading to start with Spooky >
 
 ## Getting started
 
@@ -38,7 +37,10 @@ spooky/
 │   |── spooky.css
 │   └── spooky.min.css
 ├── scss/
+│   |── base/
+│   |── modules/
 │   └── spooky.scss
+├── examples/
 ├── package.json
 ├── bower.json
 ├── gulpfile.js
@@ -60,7 +62,7 @@ The above list is non-exhaustive. Spooky works perfectly with almost all older v
 
 ## License
 
-All parts of SpookyCss are free to use and abuse under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
+Spooky is under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
 
 
 ## Acknowledgement
