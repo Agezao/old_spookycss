@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 textarea,
-select, option {
+select {
   height: $input-height;
   padding: $input-padding; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: $input-background;
@@ -22,6 +22,11 @@ select, option {
   &.lg {
     font-size: $input-lg-text-size;
   }
+}
+
+select {
+  -webkit-appearance: inherit;
+  padding: 5px 10px;
 }
 
 input {

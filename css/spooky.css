@@ -416,9 +416,9 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   cursor: pointer;
   box-sizing: border-box; }
   input[type="submit"]:before, input[type="reset"]:before, input[type="button"]:before {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     float: left;
-    margin: 10px 5px 0 0; }
+    margin: 9px 5px 0 0; }
 
 .button:hover,
 button:hover {
@@ -543,6 +543,10 @@ select {
   textarea.lg,
   select.lg {
     font-size: 2.4rem; }
+
+select {
+  -webkit-appearance: inherit;
+  padding: 5px 10px; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: auto;
