@@ -20,6 +20,12 @@ button {
   border: 1px solid $border-color;
   cursor: pointer;
   box-sizing: border-box;
+
+  &:before {
+    font-size: 1.5rem;
+    float: left;
+    margin: 10px 5px 0 0;
+  }
 }
 
 input {
@@ -43,6 +49,12 @@ input {
     border: 1px solid $border-color;
     cursor: pointer;
     box-sizing: border-box;
+
+    &:before {
+      font-size: 1.7rem;
+      float: left;
+      margin: 9px 5px 0 0;
+    }
   }
 }
 

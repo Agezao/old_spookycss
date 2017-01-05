@@ -391,6 +391,11 @@ button {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
+  .button:before,
+  button:before {
+    font-size: 1.5rem;
+    float: left;
+    margin: 10px 5px 0 0; }
 
 input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
@@ -410,6 +415,10 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
+  input[type="submit"]:before, input[type="reset"]:before, input[type="button"]:before {
+    font-size: 1.5rem;
+    float: left;
+    margin: 10px 5px 0 0; }
 
 .button:hover,
 button:hover {
